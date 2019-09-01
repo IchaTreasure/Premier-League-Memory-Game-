@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  background: #f50a50;
+}
+
+/* currnent status of the game stying */
+.game-info {
+  float: right;
+	font-size: 40px;
+	color: #221775; 
+	margin-top: 30px;
+	margin-bottom: 100px;
+	margin-right: 100px;
+	margin-left: 100px; 
+	border: 5px solid #221775;
+	border-radius: 30px;
+}
+
+/* Space between the timer and score */
+#game-score{
+	margin: 30px;
+}
+.game-timer{
+  margin: 30px;
+}
+
+#reset-game {
+  background-color: #221775;
+	margin-bottom: 50px;
+	margin-left: 70px;
+	border-radius: 10px;
+}
+
+#game-container {
+  float: left;
+	width: 800px;
+	height: auto;
+	margin: 10px 20px 20px 100px;
+	border: 6px solid #221775;
+	background-color: #221775;
+	border-radius: 25px;
+}
+
+img {
+	width: 120px;
+	height: 110px;
+}
+
+.memory-card{
+  width: 151px; 
+	height: 125px;
+	display: inline-block;
+	float: left;
+	margin: 3px;
+	padding: 10px;
+	background-color: white;
+}
+
+.front-card {
+	position: absolute;
+	width: 150px; 
+	height: 125px; 
+	margin: 0;
+	transform: rotateY(0deg);
+	transition: transform 0.5s linear 0s; 
+	backface-visibility: hidden;
+	
+}
+
+.back-card {
+	position: absolute; 
+	width: 150px; 
+	height: 125px; 
+	transform: rotateY(180deg);
+	transition: transform 0.5s linear 0s; 
+	backface-visibility: hidden;
+}
