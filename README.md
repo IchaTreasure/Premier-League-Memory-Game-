@@ -69,7 +69,7 @@
 
 <p>Step 4: You will be automatically taken to the top of the page where in a light blue bar will be stated "Github Pages source saved".</p>
 
-<p>Step 5: You then scroll down to GitHub Pages where will be stated "Your site is ready to be published at "https://eucaa.github.io/Sailor-Moon-Memory-Card-Game/"</p>
+<p>Step 5: You then scroll down to GitHub Pages where will be stated "Your site is ready to be published at</p>
 
 <p>Step 6: Click on the url and you will be auto-referred to the published webpage.</p>
 
