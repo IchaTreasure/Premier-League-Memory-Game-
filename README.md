@@ -7,12 +7,12 @@
     If all matches are found before the countdown timerruns out the game is won.</p>
 
 <h2>UX</h2>
-<p>As stated above the game has been designed for all ages, so the apperance has been made as simple as possible.</p>
-<p>The game allows football fans to find their favourite premier league team badges. Once the game is loaded there is a</p>
-<p>homepage that welcomes you to the game, there are also two buttons on the page one to play the game and another to tell the</p>
-<p>player how to play the game. When the how to play button is clicked a modal will activate with instructions on how to play</p> 
-<p>the game. When the play button is clicked a modal will activate with two buttons for two levels of diffculty, either a</p> 
-<p>3 X 4 or a 4 X 5 grid difficulty. After the difficulty is selected the player is taken to the respective page. 
+<p>As stated above the game has been designed for all ages, so the apperance has been made as simple as possible.
+The game allows football fans to find their favourite premier league team badges. Once the game is loaded there is a
+homepage that welcomes you to the game, there are also two buttons on the page one to play the game and another to tell the
+player how to play the game. When the how to play button is clicked a modal will activate with instructions on how to play 
+the game. When the play button is clicked a modal will activate with two buttons for two levels of diffculty, either a 
+3 X 4 or a 4 X 5 grid difficulty. After the difficulty is selected the player is taken to the respective page. 
 While playing the game, if the player decide to restart mid game, there is a restart button that resets the board. There is another button 
 called New Level incase the user wants to try another level.</p> 
 

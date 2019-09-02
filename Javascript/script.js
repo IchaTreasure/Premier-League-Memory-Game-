@@ -1,26 +1,26 @@
 var status = 0;
 
 var cardPictures = [
-    '<img src="Images/manunited.jpg">',
-    '<img src="Images/manunited.jpg">',
-    '<img src="Images/Mancity.png">',
-    '<img src="Images/Mancity.png">',
-    '<img src="Images/leicester.jpg">',
-    '<img src="Images/leicester.jpg">',
-    '<img src="Images/Everton.png">',
-    '<img src="Images/Everton.png">',
-    '<img src="Images/chelsea.png">',
-    '<img src="Images/chelsea.png">',
-    '<img src="Images/Watford.png">',
-    '<img src="Images/Watford.png">',
-    '<img src="Images/west-ham.png">',
-    '<img src="Images/west-ham.png">',
-    '<img src="Images/bournemouth.jpg">',
-    '<img src="Images/bournemouth.jpg">',
-    '<img src="Images/Burnley.png">',
-    '<img src="Images/Burnley.png">',
-    '<img src="Images/crystal_pal.png">',
-    '<img src="Images/crystal_pal.png">',
+	'<img src="Images/manunited.jpg">',
+	'<img src="Images/manunited.jpg">',
+	'<img src="Images/Mancity.png">',
+	'<img src="Images/Mancity.png">',
+	'<img src="Images/leicester.jpg">',
+	'<img src="Images/leicester.jpg">',
+	'<img src="Images/Everton.png">',
+	'<img src="Images/Everton.png">',
+	'<img src="Images/chelsea.png">',
+	'<img src="Images/chelsea.png">',
+	'<img src="Images/Watford.png">',
+	'<img src="Images/Watford.png">',
+	'<img src="Images/west-ham.png">',
+	'<img src="Images/west-ham.png">',
+	'<img src="Images/bournemouth.jpg">',
+	'<img src="Images/bournemouth.jpg">',
+	'<img src="Images/Burnley.png">',
+	'<img src="Images/Burnley.png">',
+	'<img src="Images/crystal_pal.png">',
+	'<img src="Images/crystal_pal.png">',
 ];
 
 var cardChecked = 0;
@@ -33,6 +33,11 @@ var cardTextRecord = [];
 var cardRecord = [];
 var numberOfFlips = 0;
 var scoreCounter = 0;
+
+var countDown; 
+var secsInput = 60; 
+var seconds = secsInput; 
+
 
 //Fliping the cards
 document.getElementById("game-container").addEventListener("click", function(e) { // Listening for click 
@@ -109,33 +114,34 @@ function showScore() {
 }
 
 document.getElementById("reset-game").addEventListener("click", startNewGame);
+
 function startNewGame() {
 	window.location.reload();
 }
 
-function resetBoard(){
-	for (var i=0; i<20; i++){ // For loop to loop 20 times for all 20 cards 
-		if(i == 0) {
+function resetBoard() {
+	for (var i = 0; i < 20; i++) { // For loop to loop 20 times for all 20 cards 
+		if (i == 0) {
 			// using the Math.random function to generate random nubers
 			var randomNum = Math.round(Math.random() * cardPictures.length);
-			
+
 			//while loop to check loop again until the number is between 0-19
-			while(randomNum == cardPictures.length){
-			randomNum = Math.round(Math.random() * cardPictures.length);
+			while (randomNum == cardPictures.length) {
+				randomNum = Math.round(Math.random() * cardPictures.length);
 			}
 			// after a random number between 0-19 has been generated the image index is updated 
 			//with the randomNum
 			imageIndex[i] = randomNum;
 		}
-				else { //generate unique random values - not in imageIndex array 
-			while(status == 0) {
+		else { //generate unique random values - not in imageIndex array 
+			while (status == 0) {
 				randomNum = Math.round(Math.random() * cardPictures.length); //12
-				if(randomNum !== cardPictures.length) {
-					for(var j=0; j<imageIndex.length; j++) {
-						if(randomNum == imageIndex[j]) { // 3 == 12
+				if (randomNum !== cardPictures.length) {
+					for (var j = 0; j < imageIndex.length; j++) {
+						if (randomNum == imageIndex[j]) { // 3 == 12
 							break;
 						}
-						else if(j == imageIndex.length - 1) { // 3 == 3
+						else if (j == imageIndex.length - 1) { // 3 == 3
 							status = 1;
 							imageIndex[i] = randomNum;
 						}
@@ -144,9 +150,28 @@ function resetBoard(){
 			}
 		}
 		status = 0;
-		document.getElementById("back-card" + (i+1)).innerHTML = cardPictures[randomNum]; 
-		
+		document.getElementById("back-card" + (i + 1)).innerHTML = cardPictures[randomNum];
 	}
+
+	startTimer(seconds);
+
+
 }
 
 window.onload = resetBoard();
+
+
+function startTimer(secs) {
+	document.getElementById("timer").innerHTML = "00:" + secs; //00:00
+	
+	if(secs == 0) {
+		//stop the time out and stop the function as well 
+		clearTimeout(countDown);
+		document.getElementById("timer").innerHTML = "00:00";
+		return;
+	}
+	
+	secs--; //0
+	//recurring function - a function that keeps calling itself with new/updated arguments 
+	countDown = setTimeout(function(){startTimer(secs);},1000);
+}

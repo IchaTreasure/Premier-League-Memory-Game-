@@ -26,6 +26,10 @@ var cardRecord = [];
 var numberOfFlips = 0;
 var scoreCounter = 0;
 
+var countDown; 
+var secsInput = 60; 
+var seconds = secsInput; 
+
 //Fliping the cards
 document.getElementById("game-container").addEventListener("click", function(e) { // Listening for click 
 	var targetElement = e.target.parentElement; //finding out which element was clicked and the parent of that elemnt 
@@ -92,11 +96,10 @@ function unFlip() {
 function showScore() {
 	endgame = true;
 	if (scoreCounter == 6) {
-		alert("Congratulations! You won! Your Score is " + scoreCounter + "/10");
-		//document.getElementById("mModal").style.display = "show";
+		alert("Congratulations! You won! Your Score is " + scoreCounter + "/6");
 	}
 	else {
-		alert("Sorry!!!! You Lost Your score is " + scoreCounter + "/10");
+		alert("Sorry!!!! You Lost Your score is " + scoreCounter + "/6");
 	}
 }
 
@@ -139,6 +142,25 @@ function resetBoard(){
 		document.getElementById("back-card" + (i+1)).innerHTML = cardPictures[randomNum]; 
 		
 	}
+
+	startTimer(seconds);
+
+
 }
 
 window.onload = resetBoard();
+
+
+function startTimer(secs) {
+	document.getElementById("timer").innerHTML = "00:" + secs; //00:00
+	
+	if(secs == 0) {
+		//stop the time out and stop the function as well 
+		clearTimeout(countDown);
+		document.getElementById("timer").innerHTML = "00:00";
+		return;
+	}
+	secs--; //0
+	//recurring function - a function that keeps calling itself with new/updated arguments 
+	countDown = setTimeout(function(){startTimer(secs);},1000);
+}
