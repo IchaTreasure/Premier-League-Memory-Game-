@@ -1,111 +1,97 @@
-<h1>Project’s Core Functionality</h1>
-
-<h2> THE PROJECT </h2>
+<h1>Premier League Memory Game</h1>
 
 <h2> WHAT IS IT? </h2>
 
-<p> Build a static (front-end only) website for an artist named Caleb Rex. </p>
+<p> This is a premier League Memory game it has been designed to be suitable and enjoyable for all ages. 
+    The game lets people find a match of two cards of the same image. 
+    If all matches are found before the countdown timer </p>
 
-<h2>BREIF</h2>
-<P>     •	Primary target audiences are the fans and potential fans who wish to use the site to see and hear clips from the back catalog, and any new material as it becomes available.</p>
-<P>     •	Use the site to showcase the music and publicise availability to perform at events such as weddings and Concerts.</p>
-<P>         The following assets to be showcased on the website:</p>
-<P>     •	Photos</p>
-<P>     •	Two video clips</p>
-<P>     •	Audio clips</p>
-<P>     •	Links to Facebook, Twitter, Instagram and YouTube pages etc.</p>
+<h2>UX</h2>
+<p>As stated above the game has been designed for all ages, so the apperance has been made as simple as possible.</p>
+<p>The game allows football fans to find their favourite premier league team badges. Once the game is loaded there is a </p>
+<p>homepage that welcomes you to the game, there are also two buttons on the page one to play the game and another to tell the </p>
+<p>player how to play the game. When the how to play button is clicked a modal will activate with instructions on how to play</p> 
+<p>the game. When the play button is clicked a modal will activate with two buttons for two levels of diffculty, either a</p> 
+<p>3 X 4 or a 4 X 5 grid difficulty.</p>
 
-<h2>PURPOSE OF WEBSITE </h2>
-<p> Based on the brief, the aim of the website (in both functionality and design) was produce a functional website that essentially showcases Caleb's music to current and new fans.</p>
+<h2>Features</h2>
+<p>How-to-Play - Showing a popup with instructions on how to play the game</p>
 
-<h2> The Initial stages </h2>
-<P>     •	Researched Caleb Rex's social media to help me know what kind of design would best suit him and his kind of music.</p>
-<P>     •	Decided what pages were going to be on the website</p>
-<P>     •	Sketched out a template for the header and footer which was going to be repaeated on all the pages</p>
-<P>     •	Then sketched out ideas for the actual page content of each page</p>
-<P>     •	Decided on the final design</p>
+<p>Timer - Shows the user how many moves have been made within the time limit, including a "try-again" to reload the game and start again.</p>
 
-<h2> Page Layout </h2>
-<P>     •	I decided to go with 5 different pages i.e about page, music page, </p>
-<p>         videos page, photos page and contact page excluding the index page.</p>
-<P>     •	The about page contains a row with two columns, one for the picture about </p>
-<p>         Caleb and another column containing a few text about caleb and his music.</p>
-<P>     •	The Music page contains two rows with three columns on each row which contain</p>
-<p>         an audio file for a song and the corresponding cover photo for the song </p>
-<P>     •	The videos page contains two rows inside a container containing two music videos. </p>
-<P>     •	The photos page contains 12 photos</p>
-<P>     •	The contact us page contains a row with two columns one with a form for the user to fill</p>
-<P>     	and another column showing alternative methods e.g phone number and email address</p>
+<p>Success - An alert will popup if all tiles have been matched within the time limit.</p>
 
-<h2> Colors and Fonts </h2>
-<P>     •   I decided to use popular Flat UI Colors from https://www.materialui.co/flatuicolorsto choose 
-            the best color suitablefor the header and footer from popular websites</p>
+<p>Failure - An alert will popup if some tiles havent been matched within the time limit with the players score</p>
 
-<h2> Navigation </h2>
-<p>     •   I choose to use a fixed navigation style, this allows for a user friendly experience on this site. </p>
+<p>Stage levels - The game includes different levels that will include more tiles with every stage</p>
+
+<p>Mute sound - This button mutes the sound which can be unmuted aswell.</p>
+
+<h2> Future features </h2>
+<p>Adding more stages</p>
+
+<h2>Tools/Technologies</h2>
+<h2>AWS Cloud9</h2>
+<p>Cloud9 hosted my Workspace for this project</p>
+
+<h2>Git</h2>
+<p>Used to push and commit any and all changes to my repository on GitHub</p>
+
+<h2>Bootstrap</h2>
+<p>Allows for extra responsiveness of html5 and JavaScript files, also Provided my buttons and modal.</p>
+
+<h2>CSS</h2>
+<p>CSS3 has been implemented for styling the game.<p>
+
+<h2>JavaScript</h2>
+<p>JavaScript has been used to implement the functionalities of the tile creation, shuffling the tiles and showing the correct alert popups when the count-down timer has ended.</p>
+
+<h2>Testing</h2>
+<p>The HTML and CSS coding was tested by using the W3C Mark Validator Service by direct input.</p>
+<p>To test the responsiveness of the website in phones, tablets, and desktops screens, I have used the Chrome Developer Tools, verifying how the site reacts in different screen sizes.</p>
+<p>The JavaScript files were tested using https://jslint.com/ by direct input of the files on the validator.</p>
+<p>The game functionality, tested on multiple browers such as Chrome, Edge, Safari and Firefox.</p>
+<p>The game has been tested by some of my friends with the question if the game was clear, easy to use and understandable.</p>
+
+<h2>Bugs</h2>
+<p>Had some issues with the re-sizing of the tiles on smaller devices. Since these kind of games are not made for small mobile devices, I kept iPad size in mind as the smallest easy accesible play-size</p>
+<p>The syntax order of the script.js file was re-adjusted in accordance to the jslint validator. If a match was made the matched cards were still able to get clicked. This has been resolved by turning off the connected CSS animation class.</p>
+
+<h2>Deployment</h2>
+<p>The project was developed using the AWS IDE. New features or changes made to the code, were added and committed to the local repository.</p>
+<p>The local commits were later pushed to my GitHub repository. The project was deployed using GitHub.</p>
+
+<p>Step 1: Go to the settings tab of the repo, scrolled down to GitHub Pages</p>
+
+<p>Step 2: Under GitHub Pages -> Source is a scrolldown box titled None. Click it and you can select a source.</p>
+
+<p>Step 3: Click master branch</p>
+
+<p>Step 4: You will be automatically taken to the top of the page where in a light blue bar will be stated "Github Pages source saved".</p>
+
+<p>Step 5: You then scroll down to GitHub Pages where will be stated "Your site is ready to be published at "https://eucaa.github.io/Sailor-Moon-Memory-Card-Game/"</p>
+
+<p>Step 6: Click on the url and you will be auto-referred to the published webpage.</p>
+
+<p>Step 7: When returning to the github repository settings, scroll down to GitHub Pages 
+and you will see a light green block stating "Your site is published at https://..."
+
+<p>The repository can be found on:</p>
 
 
-<h2> HOW IT WAS BUILT </h2>
-<p>     •   The main framework used was Bootstrap</p>
-<p>     •   Icons used are from Font Awesome</p>
-<p>     •   Google fonts are also used</p>
+<p>The site has been deployed using GitHub Pages and is available to visit here: </p>
 
-<h2> Plugins </h2>
-<p>     •   https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css</p>
-<p>     •   https://use.fontawesome.com/releases/v5.6.1/css/all.css</p>
-<p>     •   https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</p>
-<p>     •   https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</p>
-<p>     •   https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css</p>
-<p>     •   https://fonts.googleapis.com/css?family=Roboto:400,700</p>
+<h2>Credits</h2>
+<p>I would to credit the following sources for their inspiration:</p> 
+<p>Stack Overflow community</p>
+<p>CodePen community </p>
+<p>GitHub community</p> 
+<p>W3schools</p>
 
-<h2> Sources </h2>
-<p>     •   https://getbootstrap.com/</p>
-<p>     •   https://www.w3schools.com/</p>
-<p>     •   https://stackoverflow.com/</p>
-<p>     •   https://codepen.io/</p>
 
-<h2> Code/Framework Used Per page </h2>
-<h3> Navigation </h3>
-<p>     •	Bootstrap Navbar</p>
+<h2>Media</h2>
+<p>HomePage image was taken from google.</p> 
+<p>Tile images were taken from google.</p> 
 
-<h3>About</h3>
-<p>     •	Bootstrap Grid system</p>
-
-<h3>Music</h3>
-<p>     •	Bootstrap Grid system</p>
-
-<h3> Videos</h3>
-<p>     •	Bootstrap Grid system</p>
-
-<h3>Photo Gallery<h3>
-<p>     •	Bootstrap Grid system and Modal for popup photos </p>
-
-<h3>Contact Us</h3>
-<p>     •	Bootstrap Grid system</p>
-
-<h3>Footer</h3>
-<p>     •	Bootstrap for layout.</p>
-<p>     •   Font Awesome for Social Media icons.</p>
-
-<h2> HOW IT WAS TESTED </h2>
-<h3> Summary </h3>
-<p>     •	During the build, the website tested on google chrome using devTools, and testing responsiveness using the device toolbar.</p>
-<p>     •	Also used the elements and style sections of the devTools to troubleshoot coding. </p>
-<p>     •	Also tested responsiveness by resizing the window everytime I implemented a new piece of code.</p>
-<p>     •	AND also tested it physically viewing it on mobile, tablet, mac and windows laptop, windows desktop, and different browsers (firefox, safari, google chrome, opera)</p>
-
-<h2> What was tested </h2>
-<p>     •	External links to Calebs social media i.e facebook, twitter, instagram and youtube</p>
-<p>     •	Internal links (the navbar to ensure anchors were referenced to the right sections)</p>
-<p>     •	Checked images to ensure they were responsive and displayed appropriately on smaller screens</p>
-<p>     •	Ensuring content had no grammatical errors.</p>
-<p>     •	Checked margins and padding of container (sections)</p>
-<p>     •	Ensured the iframes were being responsive and displayed properly.</p>
-<p>     •	HTML and CSS validation via w3.org.</p>
-
-<h2> HOW IT WAS DEPLOYED </h2>
-<p>     •	Used GitHub Pages to deploy final version (https://ichatreasure.github.io/caleb-rex)</p>
-
-<h2> Credits </h2>
-<h3> Media </h3>
-<p>     •   The photos used in this site were obtained from Calebs facebook account </p>
+<h2>Acknowledgement</h2>
+<p>I especially would like to thank my mentor Anthony Ngene, for his support throughout this project.</p>
