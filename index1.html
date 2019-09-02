@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Premier League Memory Game</title>
+</head>
+
+<body>
+    <div class="game-info">
+        <!-- Title of the the game -->
+        <h1 style="color: #221775; text-align: center; font-size: 50px;">
+            Premier League Memory Game
+        </h1>
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <!-- div to show timer -->
+                    <div class="game-timer">
+                        <span>Timer:</span>
+                        <span>00:00</span>
+                    </div>
+                </td>
+                <td>
+                    <!-- div to show current score -->
+                    <div id="game-score">
+                        <span>Score:</span>
+                        <span>0</span>
+                    </div>
+                </td>
+                <td style="padding-right: 10px;">
+                    <!-- div to reset the game -->
+                    <button id="reset-game" class="btn btn-lg active"> 
+                   <p style="color: #f50a50;">Restart</p>
+                    </button>
+                </td>
+
+                <td>
+                    <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal" style="background-color: #221775;">New Level</button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Please select your difficulty</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <a href="index2.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">3 X 4</a>
+                                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="mModal" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Please select your difficulty</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
+                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
+                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- div for the 4x5 Memory game -->
+    <div id="game-container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                    <div id="memory-card1" class="memory-card">
+                        <div id="back-card1" class="back-card">
+                            <img src="Images/manunited.jpg"></img>
+                        </div>
+                        <div id="front-card1" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card2" class="memory-card">
+                        <div id="back-card2" class="back-card">
+                            <img src="Images/Mancity.png"></img>
+                        </div>
+                        <div id="front-card2" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card3" class="memory-card">
+                        <div id="back-card3" class="back-card">
+                            <img src="Images/leicester.jpg"></img>
+                        </div>
+                        <div id="front-card3" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card4" class="memory-card">
+                        <div id="back-card4" class="back-card">
+                            <img src="Images/Everton.png"></img>
+                        </div>
+                        <div id="front-card4" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card5" class="memory-card">
+                        <div id="back-card5" class="back-card">
+                            <img src="Images/chelsea.png"></img>
+                        </div>
+                        <div id="front-card5" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+            <tr>
+                <td>
+                    <div id="memory-card6" class="memory-card">
+                        <div id="back-card6" class="back-card">
+                            <img src="Images/Watford.png"></img>
+                        </div>
+                        <div id="front-card6" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card7" class="memory-card">
+                        <div id="back-card7" class="back-card">
+                            <img src="Images/west-ham.png"></img>
+                        </div>
+                        <div id="front-card7" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card8" class="memory-card">
+                        <div id="back-card8" class="back-card">
+                            <img src="Images/bournemouth.jpg"></img>
+                        </div>
+                        <div id="front-card8" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card9" class="memory-card">
+                        <div id="back-card9" class="back-card">
+                            <img src="Images/Burnley.png"></img>
+                        </div>
+                        <div id="front-card9" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card10" class="memory-card">
+                        <div id="back-card10" class="back-card">
+                            <img src="Images/crystal_pal.png"></img>
+                        </div>
+                        <div id="front-card10" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+            <tr>
+                <td>
+                    <div id="memory-card11" class="memory-card">
+                        <div id="back-card11" class="back-card">
+                            <img src="Images/manunited.jpg"></img>
+                        </div>
+                        <div id="front-card11" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card12" class="memory-card">
+                        <div id="back-card12" class="back-card">
+                            <img src="Images/Watford.png"></img>
+                        </div>
+                        <div id="front-card12" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card13" class="memory-card">
+                        <div id="back-card13" class="back-card">
+                            <img src="Images/Burnley.png"></img>
+                        </div>
+                        <div id="front-card13" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card14" class="memory-card">
+                        <div id="back-card14" class="back-card">
+                            <img src="Images/west-ham.png"></img>
+                        </div>
+                        <div id="front-card14" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card15" class="memory-card">
+                        <div id="back-card15" class="back-card">
+                            <img src="Images/chelsea.png"></img>
+                        </div>
+                        <div id="front-card15" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+            <tr>
+                <td>
+                    <div id="memory-card16" class="memory-card">
+                        <div id="back-card16" class="back-card">
+                            <img src="Images/bournemouth.jpg"></img>
+                        </div>
+                        <div id="front-card16" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card17" class="memory-card">
+                        <div id="back-card17" class="back-card">
+                            <img src="Images/leicester.jpg"></img>
+                        </div>
+                        <div id="front-card17" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card18" class="memory-card">
+                        <div id="back-card18" class="back-card">
+                            <img src="Images/crystal_pal.png"></img>
+                        </div>
+                        <div id="front-card18" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card19" class="memory-card">
+                        <div id="back-card19" class="back-card">
+                            <img src="Images/Mancity.png"></img>
+                        </div>
+                        <div id="front-card19" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+
+                <!-- div for the front and back images of the cards , coppied 20 time because its a 4x5 -->
+                <td>
+                    <div id="memory-card20" class="memory-card">
+                        <div id="back-card20" class="back-card">
+                            <img src="Images/Everton.png"></img>
+                        </div>
+                        <div id="front-card20" class="front-card">
+
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
