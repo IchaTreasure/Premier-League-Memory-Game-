@@ -3,21 +3,23 @@
 <h2> WHAT IS IT? </h2>
 
 <p> This is a premier League Memory game it has been designed to be suitable and enjoyable for all ages. 
-    The game lets people find a match of two cards of the same image. 
-    If all matches are found before the countdown timer </p>
+    The game lets people find a match of two cards of the same premier League badges. 
+    If all matches are found before the countdown timerruns out the game is won.</p>
 
 <h2>UX</h2>
 <p>As stated above the game has been designed for all ages, so the apperance has been made as simple as possible.</p>
-<p>The game allows football fans to find their favourite premier league team badges. Once the game is loaded there is a </p>
-<p>homepage that welcomes you to the game, there are also two buttons on the page one to play the game and another to tell the </p>
+<p>The game allows football fans to find their favourite premier league team badges. Once the game is loaded there is a</p>
+<p>homepage that welcomes you to the game, there are also two buttons on the page one to play the game and another to tell the</p>
 <p>player how to play the game. When the how to play button is clicked a modal will activate with instructions on how to play</p> 
 <p>the game. When the play button is clicked a modal will activate with two buttons for two levels of diffculty, either a</p> 
-<p>3 X 4 or a 4 X 5 grid difficulty.</p>
+<p>3 X 4 or a 4 X 5 grid difficulty. After the difficulty is selected the player is taken to the respective page. 
+While playing the game, if the player decide to restart mid game, there is a restart button that resets the board. There is another button 
+called New Level incase the user wants to try another level.</p> 
 
 <h2>Features</h2>
 <p>How-to-Play - Showing a popup with instructions on how to play the game</p>
 
-<p>Timer - Shows the user how many moves have been made within the time limit, including a "try-again" to reload the game and start again.</p>
+<p>Timer - Shows the user how much time they have left to match the tiles</p>
 
 <p>Success - An alert will popup if all tiles have been matched within the time limit.</p>
 
@@ -31,22 +33,22 @@
 <p>Adding more stages</p>
 
 <h2>Tools/Technologies</h2>
-<h2>AWS Cloud9</h2>
+<h5>AWS Cloud9</h5>
 <p>Cloud9 hosted my Workspace for this project</p>
 
-<h2>Git</h2>
+<h5>Git</h5>
 <p>Used to push and commit any and all changes to my repository on GitHub</p>
 
-<h2>Bootstrap</h2>
+<h5>Bootstrap</h5>
 <p>Allows for extra responsiveness of html5 and JavaScript files, also Provided my buttons and modal.</p>
 
-<h2>CSS</h2>
+<h5>CSS</h5>
 <p>CSS3 has been implemented for styling the game.<p>
 
-<h2>JavaScript</h2>
+<h5>JavaScript</h5>
 <p>JavaScript has been used to implement the functionalities of the tile creation, shuffling the tiles and showing the correct alert popups when the count-down timer has ended.</p>
 
-<h2>Testing</h2>
+<h5>Testing</h5>
 <p>The HTML and CSS coding was tested by using the W3C Mark Validator Service by direct input.</p>
 <p>To test the responsiveness of the website in phones, tablets, and desktops screens, I have used the Chrome Developer Tools, verifying how the site reacts in different screen sizes.</p>
 <p>The JavaScript files were tested using https://jslint.com/ by direct input of the files on the validator.</p>
