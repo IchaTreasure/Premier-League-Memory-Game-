@@ -10,7 +10,6 @@ body {
   
 }
 
-
 .homepage{
 	background-image: url('Images/premier_league.jpg');
 	width: 700px;
@@ -37,7 +36,7 @@ body {
 
 #reset-game {
   background-color: #221775;
-	margin-left: 70px;
+	margin-left: 40px;
 	border-radius: 10px;
 }
 
@@ -46,8 +45,6 @@ body {
 	width: 800px;
 	height: auto;
 	margin-left: 320px;
-	
-
 }
 
 img {
