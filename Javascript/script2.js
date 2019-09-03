@@ -57,7 +57,9 @@ function cardClicked(cardId) {
 		if (numberOfFlips == 2) {
 			if (cardTextRecord[0] == cardTextRecord[1]) {
 				scoreCounter++;
+				
 				document.getElementById("game-score").innerHTML = "Score: " + scoreCounter;
+				document.getElementById('myTune').play();
 				cardTextRecord = [];
 				cardRecord = [];
 

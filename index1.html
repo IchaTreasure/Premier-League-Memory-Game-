@@ -76,26 +76,10 @@
         </table>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="mModal" role="dialog">
-        <div class="modal-dialog">
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Please select your difficulty</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
-                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
-                    <a href="index1.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true" style="background-color: #221775;">4 X 5</a>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
+  <audio id="myTune">
+    <source src="Music/ding.mp3">
+    <source src="Music/ding.ogg">
+  </audio>
 
     <!-- div for the 4x5 Memory game -->
     <div id="game-container">
@@ -107,7 +91,7 @@
                         <div id="back-card1" class="back-card">
                             <img src="Images/Sheffield_United.png" alt="Sheffield United ">
                         </div>
-                        <img id="front-card1" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card1" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -117,7 +101,7 @@
                         <div id="back-card2" class="back-card">
                             <img src="Images/Norwich_City.png" alt="Norwich City">
                         </div>
-                        <img id="front-card2" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card2" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -127,7 +111,7 @@
                         <div id="back-card3" class="back-card">
                             <img src="Images/Newcastle_United.png" alt="Newcastle United ">
                         </div>
-                        <img id="front-card3" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card3" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -137,7 +121,7 @@
                         <div id="back-card4" class="back-card">
                             <img src="Images/Everton.png" alt="Everton ">
                         </div>
-                        <img id="front-card4" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card4" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -147,7 +131,7 @@
                         <div id="back-card5" class="back-card">
                             <img src="Images/Cardiff.png" alt="Cardiff ">
                         </div>
-                        <img id="front-card5" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card5" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
             </tr>
@@ -158,7 +142,7 @@
                         <div id="back-card6" class="back-card">
                             <img src="Images/Watford.png" alt="Watford ">
                         </div>
-                        <img id="front-card6" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card6" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -168,7 +152,7 @@
                         <div id="back-card7" class="back-card">
                             <img src="Images/west-ham.png" alt="West-Ham ">
                         </div>
-                        <img id="front-card7" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card7" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -178,7 +162,7 @@
                         <div id="back-card8" class="back-card">
                             <img src="Images/brighton-fc.png" alt="brighton-fc">
                         </div>
-                        <img id="front-card8" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card8" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -188,7 +172,7 @@
                         <div id="back-card9" class="back-card">
                             <img src="Images/Burnley.png" alt="Burnley ">
                         </div>
-                        <img id="front-card9" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card9" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -198,7 +182,7 @@
                         <div id="back-card10" class="back-card">
                             <img src="Images/crystal_pal.png" alt="crystal_pal ">
                         </div>
-                        <img id="front-card10" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card10" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
             </tr>
@@ -210,7 +194,7 @@
                         <div id="back-card11" class="back-card">
                             <img src="Images/Sheffield_United.png" alt="Sheffield United">
                         </div>
-                        <img id="front-card11" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card11" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -220,7 +204,7 @@
                         <div id="back-card12" class="back-card">
                             <img src="Images/Watford.png" alt="Watford ">
                         </div>
-                        <img id="front-card12" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card12" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -230,7 +214,7 @@
                         <div id="back-card13" class="back-card">
                             <img src="Images/Burnley.png" alt="Burnley ">
                         </div>
-                        <img id="front-card13" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card13" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -240,7 +224,7 @@
                         <div id="back-card14" class="back-card">
                             <img src="Images/west-ham.png" alt="West-Ham ">
                         </div>
-                        <img id="front-card14" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card14" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -250,7 +234,7 @@
                         <div id="back-card15" class="back-card">
                             <img src="Images/Cardiff.png" alt="Cardiff ">
                         </div>
-                        <img id="front-card15" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card15" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
             </tr>
@@ -262,7 +246,7 @@
                         <div id="back-card16" class="back-card">
                             <img src="Images/brighton-fc.png" alt="brighton-fc">
                         </div>
-                        <img id="front-card16" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card16" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -272,7 +256,7 @@
                         <div id="back-card17" class="back-card">
                             <img src="Images/Newcastle_United.png" alt="Newcastle United ">
                         </div>
-                        <img id="front-card17" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card17" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -282,7 +266,7 @@
                         <div id="back-card18" class="back-card">
                             <img src="Images/crystal_pal.png" alt="crystal_pal ">
                         </div>
-                        <img id="front-card18" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card18" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -292,7 +276,7 @@
                         <div id="back-card19" class="back-card">
                             <img src="Images/Norwich_City.png" alt="Norwich City">
                         </div>
-                        <img id="front-card19" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card19" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
 
@@ -302,7 +286,7 @@
                         <div id="back-card20" class="back-card">
                             <img src="Images/Everton.png" alt="Everton ">
                         </div>
-                        <img id="front-card20" class="front-card" src="Images/PREM.png" alt="Premier League">
+                        <img id="front-card20" class="front-card" src="Images/PREM.png" alt="Premier League" onclick="document.getElementById('myTune').play()">
                     </div>
                 </td>
             </tr>
