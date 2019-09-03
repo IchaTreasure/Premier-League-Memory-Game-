@@ -42,6 +42,7 @@ document.getElementById("game-container").addEventListener("click", function(e) 
 	}
 });
 
+//https://github.com/MarineMargaco/MEMORY-GAME/blob/cb05fcfa8dcd30c5db7f3d81788dadec6eaf3846/memory.js
 function cardClicked(cardId) {
 	cardNumber = cardId.replace("memory-card", "");
 	cardNumber = parseInt(cardNumber, 10);
@@ -80,6 +81,7 @@ function cardClicked(cardId) {
 	}
 }
 
+//https://github.com/MarineMargaco/MEMORY-GAME/blob/cb05fcfa8dcd30c5db7f3d81788dadec6eaf3846/memory.js
 function unFlip() {
 	document.getElementById("front-card" + cardRecord[0]).style.transform = "rotateY(0deg)";
 	document.getElementById("back-card" + cardRecord[0]).style.transform = "rotateY(180deg)";
@@ -108,6 +110,7 @@ function startNewGame() {
 	window.location.reload();
 }
 
+//https://github.com/MarineMargaco/MEMORY-GAME/blob/cb05fcfa8dcd30c5db7f3d81788dadec6eaf3846/memory.js
 function resetBoard(){
 	for (var i=0; i<12; i++){ // For loop to loop 12 times for all 20 cards 
 		if(i == 0) {
@@ -150,7 +153,7 @@ function resetBoard(){
 
 window.onload = resetBoard();
 
-
+//https://github.com/MarineMargaco/MEMORY-GAME/blob/cb05fcfa8dcd30c5db7f3d81788dadec6eaf3846/memory.js
 function startTimer(secs) {
 	document.getElementById("timer").innerHTML = "00:" + secs; //00:00
 	

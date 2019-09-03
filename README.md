@@ -52,14 +52,13 @@ called New Level incase the user wants to try another level.</p>
 
 <h3>Testing</h3>
 <p>The HTML and CSS coding was tested by using the W3C Mark Validator Service by direct input.</p>
-<p>To test the responsiveness of the website in phones, tablets, and desktops screens, I have used the Chrome Developer Tools, verifying how the site reacts in different screen sizes.</p>
+<p>To test the responsiveness of the website in phones, tablets, and desktops screens, I have used the Chrome Developer Tools.</p>
 <p>The JavaScript files were tested using https://jslint.com/ by direct input of the files on the validator.</p>
 <p>The game functionality, tested on multiple browers such as Chrome, Edge, Safari and Firefox.</p>
 <p>The game has been tested by some of my friends with the question if the game was clear, easy to use and understandable.</p>
 
 <h2>Bugs</h2>
 <p>Had some issues with the re-sizing of the tiles on smaller devices. Since these kind of games are not made for small mobile devices, I kept iPad size in mind as the smallest easy accesible play-size</p>
-<p>The syntax order of the script.js file was re-adjusted in accordance to the jslint validator. If a match was made the matched cards were still able to get clicked. This has been resolved by turning off the connected CSS animation class.</p>
 
 <h2>Deployment</h2>
 <p>The project was developed using the AWS IDE. New features or changes made to the code, were added and committed to the local repository.</p>
