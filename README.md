@@ -45,10 +45,23 @@ called New Level incase the user wants to try another level.</p>
 <p>Allows for extra responsiveness of html5 and JavaScript files, also Provided my buttons and modal.</p>
 
 <h3>CSS</h3>
-<p>CSS3 has been implemented for styling the game.<p>
+<p>CSS3 has been implemented for styling the game.</p>
 
 <h3>JavaScript</h3>
 <p>JavaScript has been used to implement the functionalities of the tile creation, shuffling the tiles and showing the correct alert popups when the count-down timer has ended.</p>
+
+<h3>Plugins</h3>
+<p>• https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css</p>
+
+<p>• https://use.fontawesome.com/releases/v5.6.1/css/all.css</p>
+
+<p>• https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</p>
+
+<p>• https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css</p>
+
+<p>• https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css</p>
+
+<p>• https://fonts.googleapis.com/css?family=Roboto:400,700</p>
 
 <h3>Testing</h3>
 <p>The HTML and CSS coding was tested by using the W3C Mark Validator Service by direct input.</p>
