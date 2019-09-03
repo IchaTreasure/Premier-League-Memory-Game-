@@ -90,12 +90,12 @@ called New Level incase the user wants to try another level.</p>
 <p>Step 6: Click on the url and you will be auto-referred to the published webpage.</p>
 
 <p>Step 7: When returning to the github repository settings, scroll down to GitHub Pages 
-and you will see a light green block stating "Your site is published at https://..."
+and you will see a light green block stating "Your site is published at https://..."</p>
 
-<p>The repository can be found on:</p>
+<p>The repository can be found on: https://github.com/IchaTreasure/Premier-League-Memory-Game-</p>
 
 
-<p>The site has been deployed using GitHub Pages and is available to visit here: </p>
+<p>The site has been deployed using GitHub Pages and is available to visit here: https://ichatreasure.github.io/Premier-League-Memory-Game-/Homepage.html</p>
 
 <h2>Credits</h2>
 <p>I would to credit the following sources for their inspiration:</p> 
