@@ -1,18 +1,18 @@
 var status = 0;
 
 var cardPictures = [
-    '<img src="Images/manunited.jpg">',
-    '<img src="Images/manunited.jpg">',
-    '<img src="Images/Mancity.png">',
-    '<img src="Images/Mancity.png">',
-    '<img src="Images/leicester.jpg">',
-    '<img src="Images/leicester.jpg">',
     '<img src="Images/Everton.png">',
     '<img src="Images/Everton.png">',
-    '<img src="Images/chelsea.png">',
-    '<img src="Images/chelsea.png">',
     '<img src="Images/Watford.png">',
     '<img src="Images/Watford.png">',
+    '<img src="Images/Sheffield_United.png">',
+    '<img src="Images/Sheffield_United.png">',
+    '<img src="Images/Norwich_City.png">',
+    '<img src="Images/Norwich_City.png">',
+    '<img src="Images/Newcastle_United.png">',
+    '<img src="Images/Newcastle_United.png">',
+    '<img src="Images/Cardiff.png">',
+    '<img src="Images/Cardiff.png">',
 ];
 
 var cardChecked = 0;

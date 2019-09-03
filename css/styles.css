@@ -59,7 +59,7 @@ img {
 	float: left;
 	margin: 3px;
 	padding: 10px;
-	background-color: white;
+	background-color: #f50a50;
 }
 
 	.memory-card:active {
@@ -82,6 +82,8 @@ img {
 	position: absolute; 
 	width: 150px; 
 	height: 125px; 
+	padding-left: 15px;
+	padding-top: 10px;
 	transform: rotateY(180deg);
 	transition: transform 0.5s linear 0s; 
 	backface-visibility: hidden;

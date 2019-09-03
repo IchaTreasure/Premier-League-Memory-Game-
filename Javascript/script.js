@@ -1,26 +1,26 @@
 var status = 0;
 
 var cardPictures = [
-	'<img src="Images/manunited.jpg">',
-	'<img src="Images/manunited.jpg">',
-	'<img src="Images/Mancity.png">',
-	'<img src="Images/Mancity.png">',
-	'<img src="Images/leicester.jpg">',
-	'<img src="Images/leicester.jpg">',
 	'<img src="Images/Everton.png">',
 	'<img src="Images/Everton.png">',
-	'<img src="Images/chelsea.png">',
-	'<img src="Images/chelsea.png">',
 	'<img src="Images/Watford.png">',
 	'<img src="Images/Watford.png">',
 	'<img src="Images/west-ham.png">',
 	'<img src="Images/west-ham.png">',
-	'<img src="Images/bournemouth.jpg">',
-	'<img src="Images/bournemouth.jpg">',
 	'<img src="Images/Burnley.png">',
 	'<img src="Images/Burnley.png">',
 	'<img src="Images/crystal_pal.png">',
 	'<img src="Images/crystal_pal.png">',
+	'<img src="Images/Sheffield_United.png">',
+	'<img src="Images/Sheffield_United.png">',
+	'<img src="Images/Norwich_City.png">',
+	'<img src="Images/Norwich_City.png">',
+	'<img src="Images/Newcastle_United.png">',
+	'<img src="Images/Newcastle_United.png">',
+	'<img src="Images/Cardiff.png">',
+	'<img src="Images/Cardiff.png">',
+	'<img src="Images/brighton-fc.png">',
+	'<img src="Images/brighton-fc.png">',
 ];
 
 var cardChecked = 0;
@@ -34,9 +34,9 @@ var cardRecord = [];
 var numberOfFlips = 0;
 var scoreCounter = 0;
 
-var countDown; 
-var secsInput = 60; 
-var seconds = secsInput; 
+var countDown;
+var secsInput = 60;
+var seconds = secsInput;
 
 
 //Fliping the cards
@@ -163,16 +163,16 @@ window.onload = resetBoard();
 
 function startTimer(secs) {
 	document.getElementById("timer").innerHTML = "00:" + secs; //00:00
-	
-	if(secs == 0) {
+
+	if (secs == 0) {
 		//stop the time out and stop the function as well 
 		clearTimeout(countDown);
-		setTimeout(function(){showScore();},800);
+		setTimeout(function() { showScore(); }, 800);
 		document.getElementById("timer").innerHTML = "00:00";
 		return;
 	}
-	
+
 	secs--; //0
 	//recurring function - a function that keeps calling itself with new/updated arguments 
-	countDown = setTimeout(function(){startTimer(secs);},1000);
+	countDown = setTimeout(function() { startTimer(secs); }, 1000);
 }
