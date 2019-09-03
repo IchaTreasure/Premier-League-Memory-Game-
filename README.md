@@ -31,24 +31,26 @@ called New Level incase the user wants to try another level.</p>
 
 <h2> Future features </h2>
 <p>Adding more stages</p>
+<p>Change the background for different stages</p>
+<p>Add background music </p>
 
 <h2>Tools/Technologies</h2>
-<h5>AWS Cloud9</h5>
+<h3>AWS Cloud9</h3>
 <p>Cloud9 hosted my Workspace for this project</p>
 
-<h5>Git</h5>
+<h3>Git</h3>
 <p>Used to push and commit any and all changes to my repository on GitHub</p>
 
-<h5>Bootstrap</h5>
+<h3>Bootstrap</h3>
 <p>Allows for extra responsiveness of html5 and JavaScript files, also Provided my buttons and modal.</p>
 
-<h5>CSS</h5>
+<h3>CSS</h3>
 <p>CSS3 has been implemented for styling the game.<p>
 
-<h5>JavaScript</h5>
+<h3>JavaScript</h3>
 <p>JavaScript has been used to implement the functionalities of the tile creation, shuffling the tiles and showing the correct alert popups when the count-down timer has ended.</p>
 
-<h5>Testing</h5>
+<h3>Testing</h3>
 <p>The HTML and CSS coding was tested by using the W3C Mark Validator Service by direct input.</p>
 <p>To test the responsiveness of the website in phones, tablets, and desktops screens, I have used the Chrome Developer Tools, verifying how the site reacts in different screen sizes.</p>
 <p>The JavaScript files were tested using https://jslint.com/ by direct input of the files on the validator.</p>
@@ -96,4 +98,4 @@ and you will see a light green block stating "Your site is published at https://
 <p>Tile images were taken from google.</p> 
 
 <h2>Acknowledgement</h2>
-<p>I especially would like to thank my mentor Anthony Ngene, for his support throughout this project.</p>
+<p>I would like to thank my mentor Anthony Ngene, for his support throughout this project.</p>

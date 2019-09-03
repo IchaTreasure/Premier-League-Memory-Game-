@@ -167,6 +167,7 @@ function startTimer(secs) {
 	if(secs == 0) {
 		//stop the time out and stop the function as well 
 		clearTimeout(countDown);
+		setTimeout(function(){showScore();},800);
 		document.getElementById("timer").innerHTML = "00:00";
 		return;
 	}
